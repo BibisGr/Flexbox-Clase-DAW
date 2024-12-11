@@ -2,3 +2,109 @@ body{
     background-color: darkblue;
     color: aliceblue;
 }
+div{
+    border: 1px solid #ffffff6d;
+    padding: 10px;
+    margin: 10px;
+}
+.bloquePrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: wrap row-reverse;
+}
+.bloqueSimpleR{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    
+}
+.bloqueSimpleG{
+    background-color: green;
+    width: 200px;
+    align-self: flex-start;
+}
+.bloqueSimpleB{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+.bloqueSimpleA{
+    background-color: yellow;
+    width: 200px;
+    align-self: flex-end;
+}
+
+/* YoutubeDEMO STYLE */
+.youtubeDemo{
+    background-color: #fff;
+    color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+}
+.youtubeDemo h1, h2,h3, h4, h5, h6, p{
+    color: #2e2e2e;
+}
+.youtubeDemo section{
+    /* border: #00f 1px solid; */
+}
+.youtubeDemo header{
+    /* border: #f00 1px solid; */
+    display: flex;
+    justify-content: space-between;
+}
+.youtubeDemo header .logoMenu{
+    display: flex;
+    align-items: center;
+}
+.youtubeDemo header .logoMenu img{
+    width: 100px;
+}
+.youtubeDemo header .logoMenu .menuICO{
+    width: 60px;
+}
+.youtubeDemo header .formulario{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.youtubeDemo header .formulario form input{
+    font-size: 16px;
+    width: 500px;
+    border-radius: 0;
+    border: #2e2e2e 1px solid;
+    padding: 5px;
+}
+.youtubeDemo header .formulario form button{
+    background-color: #2e2e2e;
+    color: #fff;
+    border: #2e2e2e 1px solid;
+    font-size: 16px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+}
+.youtubeDemo main{
+    border: #f00 1px solid;
+    display: flex;
+    justify-content: space-around;
+}
+.youtubeDemo main .menu{
+    /* background-color: aqua; */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.youtubeDemo main .menu .submenu{
+    border: #f00 1px solid;
+    border-radius: 10px;
+}
+.youtubeDemo main .contenido{
+    /* background-color: blueviolet; */
+    width: 75%;
+}
+.youtubeDemo footer{
+    border: #f00 1px solid;
+    display: flex;
+    justify-content: center;
+}
