@@ -2,11 +2,11 @@ body{
     background-color: darkblue;
     color: aliceblue;
 }
-div{
+/* div{
     border: 1px solid #ffffff6d;
     padding: 10px;
     margin: 10px;
-}
+} */
 .bloquePrincipal{
     display: flex;
     justify-content: center;
@@ -37,19 +37,15 @@ div{
 
 /* YoutubeDEMO STYLE */
 .youtubeDemo{
-    background-color: #fff;
-    color: #2e2e2e;
+    background-color: #2e2e2e;
+    color: white;
     display: flex;
     flex-direction: column;
 }
-.youtubeDemo h1, h2,h3, h4, h5, h6, p{
-    color: #2e2e2e;
-}
-.youtubeDemo section{
-    /* border: #00f 1px solid; */
+.youtubeDemo h1, h2,h3, h4, h5, h6{
+    color: #f00;
 }
 .youtubeDemo header{
-    /* border: #f00 1px solid; */
     display: flex;
     justify-content: space-between;
 }
@@ -63,46 +59,143 @@ div{
 .youtubeDemo header .logoMenu .menuICO{
     width: 60px;
 }
-.youtubeDemo header .formulario{
+.youtubeDemo header .formulario, 
+.youtubeDemo header .formulario form{
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
-.youtubeDemo header .formulario form input{
+.youtubeDemo header .formulario form .busqueda{
     font-size: 16px;
     width: 500px;
     border-radius: 0;
     border: #2e2e2e 1px solid;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     padding: 5px;
+    ;
 }
-.youtubeDemo header .formulario form button{
+.youtubeDemo header .formulario form .lupa{
+    width: 30px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.youtubeDemo header .formulario form .micro{
+    width: 30px;
+    border: none;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.youtubeDemo header .UserOption{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.youtubeDemo header .UserOption .userIMG, .notifICO, .ICOCREAR{
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* .youtubeDemo header .UserOption a{
+    margin: 5px;
+    padding: 5px;
     background-color: #2e2e2e;
-    color: #fff;
-    border: #2e2e2e 1px solid;
-    font-size: 16px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 5px;
-}
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+} */
 .youtubeDemo main{
-    border: #f00 1px solid;
     display: flex;
     justify-content: space-around;
 }
 .youtubeDemo main .menu{
-    /* background-color: aqua; */
     width: 20%;
     display: flex;
     flex-direction: column;
 }
+.youtubeDemo main .menu hr{
+    width: 100%;
+    align-self: center;
+    border: #595959 1px solid;
+    border-radius: 50px;
+}
 .youtubeDemo main .menu .submenu{
-    border: #f00 1px solid;
-    border-radius: 10px;
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.youtubeDemo main .menu .submenu:hover{
+    background-color: #595959;
 }
 .youtubeDemo main .contenido{
     /* background-color: blueviolet; */
     width: 75%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
+.youtubeDemo main .contenido .videoCard{
+    width: 350px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+.youtubeDemo main .contenido .videoCard img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.youtubeDemo main .contenido .videoCard .infocard{
+    background-color:#3b3b3b;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.youtubeDemo main .contenido .videoCard .infocard .icoCanal{
+    width: 10%;
+    border-radius: 50%;
+    margin: 10px;
+}
+.youtubeDemo main .contenido .videoCard .infocard .menuVideo{
+    width: 5%;
+    border-radius: 30%;
+    margin: 10px;
+}
+.youtubeDemo main .contenido .videoCard .infocard .infoVideo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.youtubeDemo main .contenido .videoCard .infocard .infoVideo a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.youtubeDemo main .contenido .videoCard .infocard .infoVideo .tituloVideo{
+    color: white;
+    font-weight: bold;
+}
+.youtubeDemo main .contenido .videoCard .infocard .infoVideo .canalName, .videoData{
+    color: rgb(153, 153, 153);
+    font-weight: bold;
+    font-weight: normal;
+}
+.youtubeDemo main .contenido .videoCard .infocard .infoVideo .canalName:hover{
+    color: white;
+}
+
+
 .youtubeDemo footer{
     border: #f00 1px solid;
     display: flex;
