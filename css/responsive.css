@@ -1,0 +1,27 @@
+body{
+    background-color: darkblue;
+    color: aliceblue;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+}
+
+div img{
+    width: 100%;
+}
+@media (max-width: 768px){
+    body{
+        background-color: darkred;
+        color: goldenrod;
+    }
+    div{
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px){
+    body{
+        background-color: darkgreen;
+        color: darkorange;
+    }
+}
