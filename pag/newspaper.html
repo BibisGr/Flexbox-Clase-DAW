@@ -21,18 +21,32 @@
         </section>
 
         <section class="main-nav">
+            <section class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </section>
+            <nav class="mobile-menu" id="mobileMenu">
+                <a href="#">HOME</a>
+                <a href="#">Nacionales</a>
+                <a href="#">El Mundo</a>
+                <a href="#">Deportes</a>
+                <a href="#">Economía</a>
+                <a href="#">Cultura</a>
+                <a href="#">Tecnología</a>
+                <a href="#">Opinión</a>
+                <a href="#">Más...</a>
+            </nav>
             <nav>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">Nacionales</a></li>
-                    <li><a href="#">El Mundo</a></li>
-                    <li><a href="#">Deportes</a></li>
-                    <li><a href="#">Economía</a></li>
-                    <li><a href="#">Cultura</a></li>
-                    <li><a href="#">Tecnología</a></li>
-                    <li><a href="#">Opinión</a></li>
-                    <li><a href="#">Más...</a></li>
-                </ul>
+                <a href="#">HOME</a>
+                <a href="#">Nacionales</a>
+                <a href="#">El Mundo</a>
+                <a href="#">Deportes</a>
+                <a href="#">Economía</a>
+                <a href="#">Cultura</a>
+                <a href="#">Tecnología</a>
+                <a href="#">Opinión</a>
+                <a href="#">Más...</a>
             </nav>
         </section>
         <section class="firstnew">
@@ -48,28 +62,44 @@
             </div>
             <div class="col">
                 <p>
-                Mantener niveles estables de glucosa en sangre es fundamental para una buena salud metabólica. La
-                insulina, una hormona producida por el páncreas, juega un papel clave en este proceso al regular la
-                entrada de glucosa en las células. Sin embargo, picos frecuentes de glucosa pueden llevar a un exceso de
-                producción de insulina, aumentando el riesgo de resistencia a la insulina, diabetes tipo 2 y otros
-                problemas de salud. Para evitar estos picos, es útil seguir cinco reglas clave: priorizar alimentos con
-                bajo índice glucémico, consumir proteínas y grasas saludables junto a carbohidratos, evitar el consumo
-                excesivo de azúcar y alimentos procesados, practicar actividad física regularmente y mantener horarios
-                consistentes en las comidas.
-            </p>
-            <p>
-                El impacto de estas reglas no solo ayuda a controlar la insulina, sino que también mejora la energía
-                diaria, reduce los antojos y favorece el control del peso. Por ejemplo, al incluir más alimentos ricos
-                en fibra, como vegetales y legumbres, se ralentiza la absorción de glucosa, minimizando los picos.
-                Además, la actividad física mejora la sensibilidad a la insulina, lo que permite a las células utilizar
-                la glucosa de manera más eficiente. Adoptar estas prácticas no requiere cambios drásticos, sino una
-                planificación consciente de los hábitos diarios, lo que puede marcar una diferencia significativa en la
-                prevención de enfermedades y el bienestar a largo plazo.
-            </p>
+                    Mantener niveles estables de glucosa en sangre es fundamental para una buena salud metabólica. La
+                    insulina, una hormona producida por el páncreas, juega un papel clave en este proceso al regular la
+                    entrada de glucosa en las células. Sin embargo, picos frecuentes de glucosa pueden llevar a un
+                    exceso de
+                    producción de insulina, aumentando el riesgo de resistencia a la insulina, diabetes tipo 2 y otros
+                    problemas de salud. Para evitar estos picos, es útil seguir cinco reglas clave: priorizar alimentos
+                    con
+                    bajo índice glucémico, consumir proteínas y grasas saludables junto a carbohidratos, evitar el
+                    consumo
+                    excesivo de azúcar y alimentos procesados, practicar actividad física regularmente y mantener
+                    horarios
+                    consistentes en las comidas.
+                </p>
+                <p>
+                    El impacto de estas reglas no solo ayuda a controlar la insulina, sino que también mejora la energía
+                    diaria, reduce los antojos y favorece el control del peso. Por ejemplo, al incluir más alimentos
+                    ricos
+                    en fibra, como vegetales y legumbres, se ralentiza la absorción de glucosa, minimizando los picos.
+                    Además, la actividad física mejora la sensibilidad a la insulina, lo que permite a las células
+                    utilizar
+                    la glucosa de manera más eficiente. Adoptar estas prácticas no requiere cambios drásticos, sino una
+                    planificación consciente de los hábitos diarios, lo que puede marcar una diferencia significativa en
+                    la
+                    prevención de enfermedades y el bienestar a largo plazo.
+                </p>
             </div>
-            
+
         </section>
     </main>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+    
+        menuToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('active');
+        });
+      </script>
 </body>
 
 </html>
